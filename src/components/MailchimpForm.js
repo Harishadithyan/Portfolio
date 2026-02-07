@@ -20,8 +20,8 @@ export const MailchimpForm = () => {
           Want a copy of my resume? Just click below to download!
         </p>
         <a
-          href="/Harish_Resume.pdf"
-          download="Harish_Resume.pdf"
+          href="Resume.pdf"
+          download="Resume.pdf"
           style={{
             padding: "12px 24px",
             backgroundColor: "#007bff",
