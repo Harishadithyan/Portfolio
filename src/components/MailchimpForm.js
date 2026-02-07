@@ -1,3 +1,5 @@
+import resume from "../assets/Resume.pdf";
+
 export const MailchimpForm = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center", padding: "40px 20px" }}>
@@ -20,17 +22,17 @@ export const MailchimpForm = () => {
           Want a copy of my resume? Just click below to download!
         </p>
         <a
-          href="Resume.pdf"
-          download="Resume.pdf"
-          style={{
-            padding: "12px 24px",
-            backgroundColor: "#007bff",
-            color: "#fff",
-            textDecoration: "none",
-            borderRadius: "8px",
-            fontWeight: "500",
-            transition: "background-color 0.2s ease"
-          }}
+  href={resume}
+  download="Resume.pdf"
+  style={{
+    padding: "12px 24px",
+    backgroundColor: "#007bff",
+    color: "#fff",
+    textDecoration: "none",
+    borderRadius: "8px",
+    fontWeight: "500",
+    transition: "background-color 0.2s ease"
+  }}
           onMouseEnter={(e) => (e.target.style.backgroundColor = "#0056b3")}
           onMouseLeave={(e) => (e.target.style.backgroundColor = "#007bff")}
         >

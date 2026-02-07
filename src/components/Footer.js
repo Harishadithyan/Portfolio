@@ -4,6 +4,7 @@ import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from '../assets/img/git.svg';
 import docker from '../assets/img/Docker.svg';
+
 export const Footer = () => {
   return (
     <footer className="footer">
