@@ -3,7 +3,6 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png";
 import arduino from "../assets/img/arduino.png";
 import bootstrap from "../assets/img/bootstrap.png";
-import cloudinary from "../assets/img/cloudinary.jpg";
 import css from "../assets/img/css.png";
 import js from "../assets/img/js.png";
 import html from "../assets/img/html.png";
@@ -39,7 +38,6 @@ export const Skills = () => {
     { img: css, title: "CSS" },
     { img: js, title: "JavaScript" },
     { img: arduino, title: "Arduino" },
-    { img: cloudinary, title: "Cloudinary" },
     { img: postman, title: "Postman" }
   ];
 

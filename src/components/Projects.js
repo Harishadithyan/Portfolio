@@ -10,6 +10,14 @@ import cert5 from "../assets/img/cert5.jpg";
 import cert6 from "../assets/img/cert6.jpg";
 import cert7 from "../assets/img/cert7.jpg";
 import cert8 from "../assets/img/cert8.jpg";
+import cert9 from "../assets/img/java.jpg";
+import cert10 from "../assets/img/C.jpg";
+import cert11 from "../assets/img/gedit.jpg";
+import cert12 from "../assets/img/forage.png";
+import cert13 from "../assets/img/ns3.jpg";
+import cert14 from "../assets/img/Ardunio.jpg";
+import cert15 from "../assets/img/Tata.jpg";
+import cert16 from "../assets/img/Software.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import "animate.css";
@@ -17,6 +25,11 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Instagram clone",
+      description: "React , Django",
+      vidUrl: "https://res.cloudinary.com/dl2hcx3sr/video/upload/v1770486194/Insta_clone_-_Made_with_Clipchamp_ddj9ig.mp4",
+    },
     {
       title: "Food App",
       description: "React Native",
@@ -66,9 +79,49 @@ export const Projects = () => {
       imgUrl: cert3,
     },
     {
+      title: "Software Engineer intern",
+      description: "Hacker Rank",
+      imgUrl: cert16,
+    },
+    {
       title: "C Programming",
       description: "GUVI",
       imgUrl: cert4,
+    },
+    {
+      title: "JAVA",
+      description: "Spoken Tutorial",
+      imgUrl: cert9,
+    },
+    {
+      title: "C and Cpp",
+      description: "Spoken Tutorial",
+      imgUrl: cert10,
+    },
+    {
+      title: "Developer and Technology Job Simulation",
+      description: "Forage",
+      imgUrl: cert12,
+    },
+    {
+      title: "TATA",
+      description: "TATA",
+      imgUrl: cert15,
+    },
+    {
+      title: "Gedit",
+      description: "Spoken Tutorial",
+      imgUrl: cert11,
+    },
+    {
+      title: "Ardunio",
+      description: "Spoken Tutorial",
+      imgUrl: cert14,
+    },
+    {
+      title: "NS3",
+      description: "Spoken Tutorial",
+      imgUrl: cert13,
     },
     {
       title: "Wi-Fi Robotics",
@@ -95,27 +148,29 @@ export const Projects = () => {
   const projectLinks = [
     {
       title: "Thoughtify Blog",
-      github: "https://github.com/harishadithyan1/Thoughtifydaily.git",
+      github: "https://github.com/Harishadithyan/Thoughtifydaily.git",
       appLink: "https://thoughtifydaily.onrender.com/",
       docker:"https://hub.docker.com/repository/docker/harishadithyanm/thoughtify-blog/general",
     },
     {
       title: "Todo",
-      github: "https://github.com/harishadithyan1/Todo-app.git",
+      github: "https://github.com/Harishadithyan/Todo-app.git",
       appLink: "https://todo-app-32un.onrender.com/",
       docker:"https://hub.docker.com/repository/docker/harishadithyanm/todo/general",
     },
     {
       title: "Weather",
-      github: "https://github.com/harishadithyan1/Weather.git",
+      github: "https://github.com/Harishadithyan/Weather.git",
       appLink: "https://weather-gnw2.onrender.com/",
-      docker:"",
     },
     {
       title: "IoT Dashboard",
-      github: "https://github.com/harishadithyanm/iot-dashboard",
+      github: "https://github.com/Harishadithyan/iot_dashboard.git",
       appLink: "https://drive.google.com/file/d/1kvXuwGPo1tG3OPGbRcehTL3tQGZRV7AN/view?usp=drive_link",
-      docker:"https://hub.docker.com/repository/docker/harishadithyanm/weather/general",
+    },
+    {
+      title: "Insta clone",
+      github: "https://github.com/Harishadithyan/Instagram_clone.git",
     },
   ];
 
@@ -127,12 +182,13 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
-                  <p>
-                    Here are some of the projects I’ve worked on, showcasing my skills in web, app, and IoT development.
-                    From building real-time chat apps and social media platforms to smart IoT dashboards, each project reflects my passion for creating impactful solutions.
-                    These projects leverage technologies like React, Django, and NodeMCU for end-to-end functionality.
-                  </p>
+                  <h2>Projects, Certifications & GitHub</h2>
+<p>
+  Explore my projects, certifications, and open-source work that demonstrate my skills in web, app, and IoT development.
+  From real-time applications and social platforms to smart IoT dashboards, each project reflects hands-on problem solving.
+  My GitHub showcases complete source code, while certifications highlight continuous learning with technologies like React, Django, and NodeMCU.
+</p>
+
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <div className="nav-scroll-wrapper">
@@ -191,41 +247,57 @@ export const Projects = () => {
   onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
 >
   <Card.Body>
-    <Card.Title style={{ fontSize: "1.1rem", fontWeight: "600" }}>
-      {proj.title}
-    </Card.Title>
-    <Card.Text style={{ fontSize: "0.9rem" }}>
-      <strong>GitHub:</strong>{" "}
-      <a
-        href={proj.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#65e509ff", textDecoration: "none" }}
-      >
-        Repo Link
-      </a>
-      <br />
-      <strong>Docker link:</strong>{" "}
-      <a
-        href={proj.docker}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#65e509ff", textDecoration: "none" }}
-      >
-        image link
-      </a>
-      <br />
-      <strong>Live App:</strong>{" "}
-      <a
-        href={proj.appLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#65e509ff", textDecoration: "none" }}
-      >
-        View App
-      </a>
-    </Card.Text>
-  </Card.Body>
+  <Card.Title style={{ fontSize: "1.1rem", fontWeight: "600" }}>
+    {proj.title}
+  </Card.Title>
+
+  <Card.Text style={{ fontSize: "0.9rem" }}>
+    {proj.github && (
+      <>
+        <strong>GitHub:</strong>{" "}
+        <a
+          href={proj.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#65e509ff", textDecoration: "none" }}
+        >
+          Repo Link
+        </a>
+        <br />
+      </>
+    )}
+
+    {proj.docker && (
+      <>
+        <strong>Docker:</strong>{" "}
+        <a
+          href={proj.docker}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#65e509ff", textDecoration: "none" }}
+        >
+          Image Link
+        </a>
+        <br />
+      </>
+    )}
+
+    {proj.appLink && (
+      <>
+        <strong>Live App:</strong>{" "}
+        <a
+          href={proj.appLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#65e509ff", textDecoration: "none" }}
+        >
+          View App
+        </a>
+      </>
+    )}
+  </Card.Text>
+</Card.Body>
+
 </Card>
 
                             </Col>

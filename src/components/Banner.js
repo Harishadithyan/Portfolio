@@ -14,7 +14,19 @@ export const Banner = () => {
   const period = 1500;
 
   const tick = useCallback(() => {
-    const toRotate = ["Web Developer", "App developer"];
+    const toRotate = [
+      "Web Developer",
+  "App Developer",
+  "Embedded Systems Enthusiast",
+  "IoT Developer",
+  "Hardware-Software Integrator",
+  "System-Level Thinker",
+  "Full Stack Developer",
+  "React Developer",
+  "Real-Time Systems Builder",
+  "Tech Explorer"
+];
+
 
     const i = loopNum % toRotate.length;
     const fullText = toRotate[i];
@@ -65,10 +77,7 @@ export const Banner = () => {
                   </h1>
 
                   <p>
-                    Hi, I'm Harish Adithyan, a passionate Developer with a strong
-                    foundation in full-stack development. I specialize in
-                    building responsive, user-friendly interfaces and real-time
-                    applications.
+                    Hi, I’m Harish Adithyan, a passionate developer with a strong foundation in both software and hardware systems. I specialize in building responsive, user-friendly full-stack applications and real-time solutions, while also having hands-on experience with hardware integration, system-level understanding, and device-oriented problem solving. I enjoy designing efficient, scalable solutions that bridge the gap between software logic and hardware functionality.
                   </p>
 
                   <button
